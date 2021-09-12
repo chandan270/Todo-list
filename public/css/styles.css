@@ -1,0 +1,103 @@
+
+.tasks{
+    width: auto;
+    margin-left: 20px;
+    height: 351px;
+}
+.comptasks{
+    width: auto;
+    margin-left: 20px;
+    /* padding-left: 40px !important; */
+    height: 351px;
+    overflow: auto;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+/* .todo{ */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; */
+    /* margin-left: 150px; */
+    /* margin-top: 100px; */
+/* } */
+input[type=text]{
+  border: none;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+  }
+.submit1{
+    border-radius: 100%;
+    background-color: black;
+}
+
+input[type=datetime-local]{
+    
+    border: none;
+    margin-top: 0;
+}
+.form2{
+    margin-top: 25px;
+}
+table,th,td{
+    
+    border-spacing: 20px;
+    padding: 10px;
+    margin: auto;
+    
+}
+.form-check-input{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+button{
+    border: none;
+    background-color: #f8f9fa;
+}
+body{
+   
+    background-color: #E8ECEF;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+  h2{
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+  }
+  /* .row{
+      
+  } */
+  input[type=email]{
+      
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  input[type=password]{
+      
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .btn-dark{
+      margin-top: 10px;
+  }
