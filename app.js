@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express=require("express");
 const mongoose=require("mongoose");
 const session=require("express-session");
@@ -5,7 +6,7 @@ const passport=require("passport");
 const passportLocalMongoose=require("passport-local-mongoose");
 const app=express();
 
-const URI = "mongodb+srv://dbUser:dbUser@cluster0.mqnhh.mongodb.net/test?retryWrites=true&w=majority";
+const URI = process.env.URI;
 mongoose.connect(URI,{useNewUrlParser:true,useUnifiedTopology: true});
 mongoose.set("useCreateIndex",true);
 app.set('view engine','ejs');
