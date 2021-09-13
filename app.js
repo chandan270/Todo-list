@@ -5,7 +5,8 @@ const passport=require("passport");
 const passportLocalMongoose=require("passport-local-mongoose");
 const app=express();
 
-mongoose.connect("mongodb://localhost:27017/todoDB",{useNewUrlParser:true,useUnifiedTopology: true});
+const URI = "mongodb+srv://dbUser:dbUser@cluster0.mqnhh.mongodb.net/test?retryWrites=true&w=majority";
+mongoose.connect(URI,{useNewUrlParser:true,useUnifiedTopology: true});
 mongoose.set("useCreateIndex",true);
 app.set('view engine','ejs');
 
