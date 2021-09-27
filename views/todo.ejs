@@ -13,7 +13,11 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <p class="clock"></p>
+        <div id="logout">
+        <form action="/logout" method="GET">
+            <button id="logoutbutton" type="submit" class="btn btn-dark">Logout</button>
+        </form>
+    </div>
         <div class="todo">
         <div class="tasks shadow p-3 mb-5 bg-light rounded">
         <h1 class="head display-6">TODO LIST</h1>
@@ -70,9 +74,6 @@
     
 </div>
 
-<form action="/logout" method="GET">
-    <button type="submit">Logout</button>
-</form>
 
 </div>
 

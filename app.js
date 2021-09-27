@@ -94,7 +94,10 @@ app.post("/login",function(req,res){
 
     req.login(user,function(err){
         if(err)
-        console.log(err);
+        {
+            console.log(err);
+        }
+        
         else
         {
             passport.authenticate("local")(req,res,function(){
@@ -116,12 +119,10 @@ app.get("/",function(req,res){
             {
                 if(foundUser)
                 {
-                    // console.log(foundUser.tasks);
             
                 res.render("todo",{info:foundUser.tasks});
                 }
-                else
-                res.render("todo",{info:array});
+
             }
     
         })
@@ -140,7 +141,6 @@ app.post("/",function(req,res){
     work:req.body.work,
     deadline:req.body.deadline
     });
-    // info.save();
     User.findById(req.user.id,function(err,foundUser){
         if(err)
         console.log(err);
